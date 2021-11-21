@@ -6,64 +6,321 @@
         <description>Recent content on 幽霊船</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>网页前端设计学习笔记①HTML</title>
+        <link>https://example.com/p/page-design1/</link>
+        <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/page-design1/</guid>
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaScript……但是理想和现实总是有差距的，能不能实现、能学到何种程度就是另一码事了。&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;本期教材：&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1x4411V75C&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【狂神说Java】HTML5完整教学通俗易懂&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网页结构&#34;&gt;网页结构&lt;/h2&gt;
+&lt;p&gt;一个网页主要是由以下部分组成的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;header：网页头部&lt;/li&gt;
+&lt;li&gt;footer：网页尾部&lt;/li&gt;
+&lt;li&gt;section：网页中的独立区域&lt;/li&gt;
+&lt;li&gt;article：文章内容&lt;/li&gt;
+&lt;li&gt;aside：侧边栏&lt;/li&gt;
+&lt;li&gt;nav：导航栏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;基本标签&#34;&gt;基本标签&lt;/h2&gt;
+&lt;h3 id=&#34;网页信息标签&#34;&gt;网页信息标签&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;注释标签&lt;code&gt;&amp;lt;!--  --&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;网页头部标签&lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;网页主体标签&lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt;页面的内容都写在这个标签里&lt;/li&gt;
+&lt;li&gt;网页标题标签&lt;code&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;描述性标签&lt;code&gt;&amp;lt;meta&amp;gt;&amp;lt;/meta&amp;gt;&lt;/code&gt;用来描述网页的编码类型、关键字、网络介绍
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;功能性标签&#34;&gt;功能性标签&lt;/h3&gt;
+&lt;h4 id=&#34;文字&#34;&gt;文字&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;段落标签&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;属于不同段落&lt;/li&gt;
+&lt;li&gt;换行标签&lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;属于同一个段落，不应用段前段后间距&lt;/li&gt;
+&lt;li&gt;一级标题&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;二级标题&lt;code&gt;&amp;lt;h2&amp;gt;&amp;lt;/h2&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;水平线标签&lt;code&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;媒体&#34;&gt;媒体&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;图像标签&lt;code&gt;&amp;lt;img src=&amp;quot;图片路径&amp;quot; alt=&amp;quot;图像替代文字&amp;quot; title=&amp;quot;鼠标悬停文字&amp;quot; width=&amp;quot;宽度&amp;quot; height=&amp;quot;高度&amp;quot; /&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;相对路径：&lt;code&gt;../&lt;/code&gt;本文件所在的上一级文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;音频标签&lt;code&gt;&amp;lt;video src=&amp;quot;音频路径&amp;quot; controls autoplay&amp;gt;&amp;lt;/video&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;视频标签&lt;code&gt;&amp;lt;video src=&amp;quot;视频路径&amp;quot; controls autoplay&amp;gt;&amp;lt;/video&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;controls：控制条&lt;/li&gt;
+&lt;li&gt;autoplay：自动播放&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;链接标签&lt;code&gt;&amp;lt;a href=&amp;quot;跳转位置&amp;quot; target=&amp;quot;窗口打开类型&amp;quot;文本&amp;lt;/a&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;target=&amp;quot;_self&amp;quot;&lt;/code&gt;本窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt;新窗口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;锚链接&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;定义锚&lt;code&gt;&amp;lt;a name=&amp;quot;top&amp;quot;&amp;gt;我是锚&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;插入链接&lt;code&gt;&amp;lt;a href=&amp;quot;#top&amp;quot;&amp;gt;回到锚&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进阶标签&#34;&gt;进阶标签&lt;/h2&gt;
+&lt;h3 id=&#34;列表标签&#34;&gt;列表标签&lt;/h3&gt;
+&lt;p&gt;待填坑&lt;/p&gt;
+&lt;h3 id=&#34;表格标签&#34;&gt;表格标签&lt;/h3&gt;
+&lt;p&gt;以一个3x2的表格为例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;table border=&amp;quot;1px&amp;quot;&amp;gt;
+  &amp;lt;tr&amp;gt;//行标签
+	&amp;lt;td colspan=&amp;quot;2&amp;quot;&amp;gt;1-1&amp;lt;/td&amp;gt; //横列合并左右单元格
+  &amp;lt;/tr&amp;gt; 
+  &amp;lt;tr&amp;gt;
+	&amp;lt;td rowspan=&amp;quot;2&amp;quot;&amp;gt;2-1&amp;lt;/td&amp;gt; //纵列合并上下单元格
+	&amp;lt;td&amp;gt;2-2&amp;lt;/td&amp;gt;
+  &amp;lt;/tr&amp;gt; 
+  &amp;lt;tr&amp;gt;
+	&amp;lt;td&amp;gt;3-1&amp;lt;/td&amp;gt;
+  &amp;lt;/tr&amp;gt; 
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：
+&lt;table border=&#34;1px&#34;&gt;
+&lt;tr&gt;
+&lt;td colspan=&#34;2&#34;&gt;1&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt;
+&lt;td rowspan=&#34;2&#34;&gt;2-1&lt;/td&gt;
+&lt;td&gt;2-2&lt;/td&gt;
+&lt;/tr&gt; 
+&lt;tr&gt;
+&lt;td&gt;3-1&lt;/td&gt;
+&lt;/tr&gt; 
+&lt;/table&gt;&lt;/p&gt;
+&lt;h3 id=&#34;iframe标签&#34;&gt;iframe标签&lt;/h3&gt;
+&lt;p&gt;iframe是指在一个网页中嵌套另一个网页的功能。使用例：插入B站视频、插入子页面。&lt;br/&gt;
+&lt;code&gt;&amp;lt;iframe src=&amp;quot;页面路径&amp;quot; name=框架标识名 frameborder=&amp;quot;0&amp;quot; width=&amp;quot;宽度px&amp;quot; height=&amp;quot;高度px&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;块元素和行元素的概念&#34;&gt;块元素和行元素的概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;块元素：独占一&lt;strong&gt;段&lt;/strong&gt;的元素，如：&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;行元素：可以摆放在一段的元素，如：斜体标签、粗体标签&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>猴子也能懂的基督宗教（Christianity）的分裂</title>
+        <link>https://example.com/p/christ/</link>
+        <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/christ/</guid>
+        <description>&lt;h2 id=&#34;基督宗教是什么&#34;&gt;基督宗教是什么？&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　　基督教是信仰耶稣基督为神之圣子与救世主（弥赛亚）的一神教。起源于西亚的巴勒斯坦地区，以耶稣所传扬福音及其事迹节录为《新约圣经》，并合并犹太教圣经（塔纳赫）为《旧约圣经》，整合成《圣经》做为其宗教经典，其中以《新约圣经》为信徒的生活及行为指引，信徒称为基督徒，基督徒组成的团体则称为教会或基督教会。现今亦与伊斯兰教、佛教共同视为世界三大宗教。其分为天主教、东正教、新教等三大派系，但因历史发展的缘故，汉语所称的“基督教”常专指新教，基督教整体则又另以“基督宗教”、“基督信仰”称之，而本文所指的基督教为“基督宗教”。——Wikipedia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;……打住。师父，你不要再念了。还是让我们简单地翻译一下吧：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基督宗教是以&lt;strong&gt;耶稣基督&lt;/strong&gt;为信仰对象的宗教，包括①天主教②东正教③新教。&lt;/li&gt;
+&lt;li&gt;在汉语中，&lt;strong&gt;“基督教”&lt;/strong&gt; 专指 &lt;strong&gt;③新教&lt;/strong&gt;。因此我们将Christianity译为基督宗教。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以说，在中文语境中的基督教不是“基督宗教”也不是①天主教，而是③新教。&lt;/p&gt;
+&lt;h2 id=&#34;好端端的怎么就分裂了啊&#34;&gt;好端端的怎么就分裂了啊？&lt;/h2&gt;
+&lt;p&gt;欧洲长期处于基督教的统治之下，由于受到&lt;strong&gt;文艺复兴&lt;/strong&gt;和&lt;strong&gt;宗教改革&lt;/strong&gt;两大运动的影响，于1616年爆发了以神圣罗马帝国为战场的&lt;strong&gt;①天主教&lt;/strong&gt;与&lt;strong&gt;③新教&lt;/strong&gt;之间的所谓&lt;strong&gt;欧洲三十年宗教战争&lt;/strong&gt;。此次战争后，基督宗教中的新教派信徒从①天主教中分离开来，逐渐形成了后来以欧洲北方国家为主的③基督新教。&lt;del&gt;东正教：那我呢&lt;/del&gt;&lt;/p&gt;
+&lt;div align = &#34;center&#34;&gt;
+&lt;img
+    src=&#34;https://example.com/img/pic/christ.jpg&#34;
+    title=&#34;基督教分支&#34;
+    alt=&#34;christ&#34;
+     width=&#34;500&#34;
+    
+/&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;所以他们到底有什么区别&#34;&gt;所以他们到底有什么区别？&lt;/h2&gt;
+&lt;h3 id=&#34;天主教&#34;&gt;天主教&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;教会：在全世界仅有一个教会，即驻地在梵蒂冈的大公教会，“大公”之意为全体、普世。&lt;/li&gt;
+&lt;li&gt;制度：采用圣统制，从上到下依次为：大主教（archbishops/大司教）、主教（bishops/司教）、司铎（priests/司祭）、执事（deacons/助祭），均只能由男性担任。
+&lt;ul&gt;
+&lt;li&gt;罗马的主教被称为枢机（pope/红衣主教）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对圣母的态度：信仰、尊重。&lt;/li&gt;
+&lt;li&gt;教会装潢：倾向用圣母、耶稣和圣徒的雕像作为装饰。&lt;/li&gt;
+&lt;li&gt;忏悔：通过神父向上天忏悔，因此创设了忏悔室。&lt;/li&gt;
+&lt;li&gt;信仰：除圣经之外，还信仰圣传（不成文的礼仪、教理、信仰）、圣谕（教宗的决定）&lt;/li&gt;
+&lt;li&gt;礼仪：洗礼、圣餐、坚信礼、神职授任礼、忏悔礼、病者涂油与婚礼&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;关键词：教条、母控、偶像崇拜、P事多、男性主导&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;新教&#34;&gt;新教&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;教会：到处都是。&lt;/li&gt;
+&lt;li&gt;制度：采用长老制与会众制，女性也可以担任。&lt;/li&gt;
+&lt;li&gt;对圣母的态度：认为圣母玛利亚是凡人，无需敬礼。&lt;/li&gt;
+&lt;li&gt;教会装潢：排斥雕像与绘画，认为这是偶像崇拜。因此新教教堂中很少有雕塑、图画。&lt;/li&gt;
+&lt;li&gt;忏悔：直接向上帝忏悔（避免腐败现象）。&lt;/li&gt;
+&lt;li&gt;信仰：唯爱圣经&lt;/li&gt;
+&lt;li&gt;礼仪：只承认洗礼与圣餐&lt;del&gt;P事不要多&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;关键词：轻量化、亲民路线、反腐、男女平等&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>剑持刀也 非公式Wiki</title>
-        <link>https://example.com/p/%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F-%E9%9D%9E%E5%85%AC%E5%BC%8Fwiki/</link>
+        <link>https://example.com/p/knmcwiki/</link>
         <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F-%E9%9D%9E%E5%85%AC%E5%BC%8Fwiki/</guid>
-        <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+        <guid>https://example.com/p/knmcwiki/</guid>
+        <description>&lt;style&gt;
+a.wiki:link {box-shadow: 0px -7px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; 
+        transition: all 0.3s ease; background:url(/img/ext.png)top right no-repeat; padding-right: 13px; padding-top: 6px}
+a.wiki:hover {box-shadow: 0px -10px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; }
+th.wiki {color:#fff; background:#A590AF; width:15%; vertical-align: middle; text-align: center; }
+td.wikic {width:25%; vertical-align: middle; text-align: center; }
+td.wikil {vertical-align: middle; text-align: left; }
+&lt;/style&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
 &lt;p&gt;&lt;font color=#A590AF size=5&gt;はいどーも皆さん剣持&lt;font color= #660066&gt;&lt;strong&gt;刀&lt;/strong&gt;&lt;/font&gt;也ですよ～&lt;/font&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;彩虹社元二期生。&lt;/li&gt;
-&lt;li&gt;剑道部成员。二段。副将。&lt;/li&gt;
+&lt;li&gt;剑道部成员。二段。副将。右撇子。&lt;/li&gt;
 &lt;li&gt;文系。高中是男校。&lt;/li&gt;
-&lt;li&gt;原本是Vtuber粉丝，在成为Liver之前的时期，观看大量直播和视频的时候发现了彩虹社一期生月之美兔的『可愛さだけで売らない面白さ』，开始考虑「（平时被周围看作狂人的）自己也能成为直播者」，于是参加了彩虹社的面试。&lt;/li&gt;
-&lt;li&gt;最初的人设是认真谈论亚文化和严肃话题的「隐藏认真系角色」，在活动初期以推特为主要活动场所时，由于被月之美兔叫错成了「力也」而发生了天翻地覆的变化。*后发展到收到的净是恶作剧文和粪棉花糖的境地。&lt;/li&gt;
-&lt;li&gt;谈及此事时，本人说「捉弄也好恶意也罢只要有趣就好」。连续犀利地回复了多条棉花糖和推文之后，在难度直线上升的情况下进行了第一次直播。&lt;/li&gt;
-&lt;li&gt;在初放送时仍然势头不减，以淡然的语气高速吐出名言。&lt;/li&gt;
-&lt;li&gt;以反应快、表现力强而出名，整体谈话力在彩虹社中也是屈指可数。&lt;/li&gt;
-&lt;li&gt;本人和他人都认同的萝莉控。&lt;/li&gt;
-&lt;li&gt;不擅长键盘操作，对于游戏系统的理解·操作上手很慢，能够看出对电脑等电子设备不熟悉。&lt;/li&gt;
-&lt;li&gt;在直播时表现出这样的行为时，会被观众用「もた…もた…」「老爷爷」的评论捉弄。&lt;/li&gt;
-&lt;li&gt;曾在澳大利亚住过home stay，有日常对话级别的英语水平。&lt;/li&gt;
-&lt;li&gt;笑声极其可爱。被观众和一部分Liver评价为彩虹社内top级的清楚笑声。&lt;/li&gt;
+&lt;li&gt;原本是Vtuber粉丝，在成为Liver之前偶遇了彩虹社一期生月之美兔的『可愛さだけで売らない面白さ』，发现「（平时被周围看作狂人的）自己也能成为直播者」，于是参加了彩虹社的面试。&lt;/li&gt;
+&lt;li&gt;最初的人设是认真谈论亚文化和正经话题的「隐藏认真系角色」。在以活动初期以推特为主要活动场所的时期，被月之美兔叫错成了「&lt;strong&gt;力&lt;/strong&gt;也」，因此发生了天翻地覆的变化&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。此后，收到的净是恶作剧文和粪棉花糖。
+&lt;ul&gt;
+&lt;li&gt;谈及此事时，本人道「捉弄也好恶意也罢只要有趣就行」。在犀利地回复了多条棉花糖和推文，难度直线上升的情况下初次直播。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;初放送时仍然势头不减，淡然而高速地吐出名言&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/li&gt;
+&lt;li&gt;以反应快、表现力强而出名，综合谈话力在彩虹社中也是屈指可数。&lt;/li&gt;
+&lt;li&gt;公认的萝莉控。&lt;/li&gt;
+&lt;li&gt;不擅长键盘操作&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;，游戏系统的理解・操作上手很慢，能看到对电脑等电子设备不熟悉的一面。
+&lt;ul&gt;
+&lt;li&gt;直播时会被观众的「もた…もた…」「老爷爷」捉弄。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;曾在澳大利亚有过home stay的经历，有日常对话级别的英语水平。&lt;/li&gt;
+&lt;li&gt;笑声极其可爱。被观众和&lt;a href=&#34;https://youtu.be/e4o-sm--528?t=402&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;一部分&lt;/a&gt;&lt;a href=&#34;https://youtu.be/R6N4j3Twxmg?t=9934&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;Liver&lt;/a&gt;&lt;a href=&#34;https://youtu.be/1gNnlr1KK28?t=929&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;评价&lt;/a&gt;为彩虹社内top级的清楚笑声。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;简介&#34;&gt;简介&lt;/h3&gt;
 &lt;table&gt;
 	&lt;tr&gt;
-		&lt;th&gt;年龄&lt;/th&gt;
-        &lt;th&gt;16岁&lt;/th&gt;
-        &lt;th&gt;在超过100人的彩虹社内是唯一的男子高中生。&lt;/th&gt;
+		&lt;th class= &#34;wiki&#34;&gt;年龄&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;16岁&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;是超过100人的彩虹社中&lt;b&gt;唯一的男子高中生&lt;/b&gt;。&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;th&gt;身高&lt;/th&gt;
-        &lt;th&gt;172cm&lt;/th&gt;
-        &lt;th&gt;&lt;/th&gt;
+        &lt;th class= &#34;wiki&#34;&gt;身高&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;172cm&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;th&gt;生日&lt;/th&gt;
-        &lt;th&gt;8月22日&lt;/th&gt;
-        &lt;th&gt;即使迎来生日岁数也不会增长。&lt;/th&gt;
+        &lt;th class= &#34;wiki&#34;&gt;生日&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;8月22日&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;即使迎来生日年龄也不会增长。&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;th&gt;血型&lt;/th&gt;
-        &lt;th&gt;O型&lt;/th&gt;
-        &lt;th&gt;&lt;/th&gt;
+        &lt;th class= &#34;wiki&#34;&gt;血型&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;O型&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;th&gt;居住地&lt;/th&gt;
-        &lt;th&gt;虚拟神奈川&lt;/th&gt;
-        &lt;th&gt;和同期的伏见学住得很近。&lt;/th&gt;
+        &lt;th class= &#34;wiki&#34;&gt;居住地&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;虚拟神奈川&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;和同期的伏见学住得很近。&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;/table&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;第一人称&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;僕&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;……本该如此，却时不时地会说错成&lt;b&gt;俺&lt;/b&gt;，然后&lt;a href=&#34;https://youtu.be/CsLEUprDE-s?t=2339&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;绝叫&lt;/a&gt;&lt;a href=&#34;https://youtu.be/h4DjMxkcnXU?t=3060&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;连呼&lt;/a&gt;着改正。&lt;br/&gt;&lt;img src=&#34;../../../img/emoji/kenmochi.png&#34; alt=&#34;alt&#34; title=&#34;icon&#34; width=&#34;20&#34;/&gt;&lt;a href=&#34;https://twitter.com/rei_Toya_rei/status/1360584624125091841&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;&lt;font color=#660066&gt;「第一人称是僕，请多指教。」&lt;/font&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;家族构成&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;父亲、母亲（关西人）、哥哥（22）、姐姐&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;父亲：文字工作者，每次都会看直播。意外地爱胡闹。剑持的头号粉丝。喜欢桃草。&lt;br/&gt;母亲：不熟悉网络，不清楚儿子的动向。&lt;br/&gt;哥哥：会看直播，很照顾弟弟。关系很好。&lt;br/&gt;姐姐：阳角，轻腐女。关系不怎么好。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;宠物&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;高龄蝴蝶犬&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;怪物级别的寿命。♀。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;印象色&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;&lt;font color=&#34;#fff&#34; style=&#34;background:#A590AF&#34;&gt;#A590AF&lt;/color&gt;&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;取自&lt;a href=&#34;https://www.itsukaralink.jp/livers&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;「いつから.link」&lt;/a&gt;的背景色。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;魅力&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34;&gt;下巴、绝不谄媚、绝不动摇&lt;/td&gt;
+        &lt;td class= &#34;wikil&#34;&gt;出自『&lt;a href=&#34;https://youtu.be/dO7egHj103U?t=322&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;爆锤机台&lt;/a&gt;』。下巴是骄傲。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th class= &#34;wiki&#34;&gt;座右铭&lt;/th&gt;
+        &lt;td class= &#34;wikic&#34; colspan=&#34;2&#34;&gt;&lt;b&gt;比起后悔没买，不如买了再后悔&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
 &lt;h3 id=&#34;喜好&#34;&gt;喜好&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;兴趣&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;涉猎广泛，最喜欢的是漫画。拥有2000册以上的单行本。最近还沉迷观影。&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;喜欢的动漫&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;	漫画：最喜欢的是『即便如此小镇仍然运转』&lt;br/&gt;漫画杂志：Haruta&lt;br/&gt;动画：给人安利的话是『乒乓』想让人喜欢上动画的话是『少女与战车』&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;喜欢的游戏&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;最喜欢的是『啪嗒砰2』。除此之外还有马里奥赛车、Tetris。&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;喜欢的食物&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;食物：炸牡蛎（最爱）、咖喱、汉堡、番茄、青花鱼&lt;br/&gt;饮料：可乐&lt;br/&gt;味道：草莓味、酸味（橙醋）&lt;br/&gt;蘑菇竹笋：蘑菇派&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;讨厌的东西&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;	第1讨厌的是文字，第2是剧透，第3是基尔札连III世。然后是杞忧民。没有讨厌的食物。&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;二次创作&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;接受自己相关的二次创作，在Niconico动画上公开了喜欢的视频。&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;自搜&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;没有打标签的同人图也会转发点赞。恐怖得很。&lt;a href=&#34;https://twitter.com/rei_Toya_rei/status/993434320143466496&#34; target=&#34;_blank&#34; class=&#34;wiki&#34;&gt;「僕のアーカイブ5周」&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th class= &#34;wiki&#34;&gt;萝莉&lt;/th&gt;
+        &lt;td class= &#34;wikil&#34;&gt;自称商业萝莉。详细参考『直播插曲#剑持刀也~萝莉控～』。&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;涉猎广泛，曾言「作品能够被大众所知，一定有其理由」，喜爱的东西相当多。
+&lt;details&gt;
+	&lt;summary&gt; 喜爱的各种 &lt;/summary&gt;
+	ニコニコに配信のアーカイブをアップロードする際に投稿主コメントに書かれている好きな〇〇シリーズ
+
+
+&lt;/details&gt;&lt;/li&gt;
+&lt;li&gt;その他、好きなものについてはこちらへ。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;直播动画风格&#34;&gt;直播·动画风格&lt;/h3&gt;
 &lt;h3 id=&#34;活动经历&#34;&gt;活动经历&lt;/h3&gt;
 &lt;h3 id=&#34;衣服配件等&#34;&gt;衣服·配件等&lt;/h3&gt;
 &lt;h3 id=&#34;活动场所&#34;&gt;活动场所&lt;/h3&gt;
 &lt;h2 id=&#34;插曲名言别名zip&#34;&gt;插曲·名言·别名.zip&lt;/h2&gt;
-&lt;h3 id=&#34;关于剑持刀也p关于剑持刀也&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/p/%e5%85%b3%e4%ba%8e%e5%89%91%e6%8c%81%e5%88%80%e4%b9%9f/&#34; &gt;关于剑持刀也&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;关于剑持刀也pknmcwiki2-1&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/p/knmcwiki2-1/&#34; &gt;关于剑持刀也&lt;/a&gt;&lt;/h3&gt;
 &lt;h3 id=&#34;直播插曲&#34;&gt;直播插曲&lt;/h3&gt;
 &lt;h3 id=&#34;名言语录&#34;&gt;名言·语录&lt;/h3&gt;
 &lt;h3 id=&#34;别名一览&#34;&gt;别名一览&lt;/h3&gt;
@@ -77,6 +334,20 @@
 &lt;h3 id=&#34;seeds&#34;&gt;SEEDs&lt;/h3&gt;
 &lt;h3 id=&#34;统合后出道&#34;&gt;统合后出道&lt;/h3&gt;
 &lt;h3 id=&#34;外部vtuber&#34;&gt;外部Vtuber&lt;/h3&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;此事仅在诞生后半天不到发生。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;「欺诈师」等绰号也是在这个阶段诞生的。&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;活動初期には人差し指タイピングしていると発言。現在は比較的上達している。&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
         </item>
         

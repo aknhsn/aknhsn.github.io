@@ -6,23 +6,41 @@
     <description>Recent content in Posts on 幽霊船</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网页前端设计学习笔记①HTML</title>
+      <link>https://example.com/p/page-design1/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/page-design1/</guid>
+      <description>前言 为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaS</description>
+    </item>
+    
+    <item>
+      <title>猴子也能懂的基督宗教（Christianity）的分裂</title>
+      <link>https://example.com/p/christ/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/christ/</guid>
+      <description>基督宗教是什么？ 基督教是信仰耶稣基督为神之圣子与救世主（弥赛亚）的一神教。起源于西亚的巴勒斯坦地区，以耶稣所传扬福音及其事迹节录为《新约圣经</description>
+    </item>
+    
     <item>
       <title>关于剑持刀也</title>
-      <link>https://example.com/p/%E5%85%B3%E4%BA%8E%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F/</link>
+      <link>https://example.com/p/knmcwiki2-1/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/%E5%85%B3%E4%BA%8E%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F/</guid>
+      <guid>https://example.com/p/knmcwiki2-1/</guid>
       <description>兴趣·特技·爱好 剑道 开始练剑道的契机是认为怪物猎人的太刀很帅和竹刀少女的影响。 经常担任一军的次锋和二军的副将。最近也开始担任中坚。 认为竹刀是</description>
     </item>
     
     <item>
       <title>剑持刀也 非公式Wiki</title>
-      <link>https://example.com/p/%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F-%E9%9D%9E%E5%85%AC%E5%BC%8Fwiki/</link>
+      <link>https://example.com/p/knmcwiki/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/p/%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F-%E9%9D%9E%E5%85%AC%E5%BC%8Fwiki/</guid>
-      <description>介绍 はいどーも皆さん剣持刀也ですよ～ 彩虹社元二期生。 剑道部成员。二段。副将。 文系。高中是男校。 原本是Vtuber粉丝，在成为Liver之前的</description>
+      <guid>https://example.com/p/knmcwiki/</guid>
+      <description>a.wiki:link {box-shadow: 0px -7px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; transition: all 0.3s ease; background:url(/img/ext.png)top right no-repeat; padding-right: 13px; padding-top: 6px} a.wiki:hover {box-shadow: 0px -10px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; } th.wiki {color:#fff; background:#A590AF; width:15%; vertical-align: middle; text-align: center; } td.wikic {width:25%; vertical-align: middle; text-align: center; } td.wikil {vertical-align: middle; text-align: left; } 介绍 はいどーも皆さん剣持刀也ですよ～ 彩虹</description>
     </item>
     
   </channel>

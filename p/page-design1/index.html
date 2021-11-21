@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaS'><title>网页前端设计学习笔记①HTML</title>
+
+<link rel='canonical' href='https://example.com/p/page-design1/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='网页前端设计学习笔记①HTML'>
+<meta property='og:description' content='前言 为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaS'>
+<meta property='og:url' content='https://example.com/p/page-design1/'>
+<meta property='og:site_name' content='幽霊船'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='网页前端' /><meta property='article:tag' content='HTML' /><meta property='article:tag' content='CSS' /><meta property='article:published_time' content='2021-11-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-11-12T16:41:42&#43;08:00'/>
+<meta name="twitter:title" content="网页前端设计学习笔记①HTML">
+<meta name="twitter:description" content="前言 为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaS">
+    <link rel="shortcut icon" href="/img/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    <!-- 
+        extended
+     -->
+    on-phone--column extended
+">
+    
+<div id="article-toolbar">
+    <a href="https://example.com" class="back-home">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+        <span>前のページ</span>
+    </a>
+</div>
+    <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu0889b6a6077fd4fee9b1d49ab91310d9_121639_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">幽霊船</a></h1>
+        <h2 class="site-description">We all came from there.</h2></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>ホーム</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>個人情報</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://twitter.com/QPuvOISIp3N8gQr' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                
+                <span>ツイッター</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='https://wxw.moe/web/accounts/100513' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                
+                <span>マストドン</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>アーカイブ</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>サーチ</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>ダークモード</span>
+            </li>
+        
+    </ol>
+</aside>
+
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E9%BA%BB%E7%93%9C%E7%AC%94%E8%AE%B0/" style="background-color: #8A4A76; color: #fff;">
+                麻瓜笔记
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/page-design1/">网页前端设计学习笔记①HTML</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 12, 2021</time>
+            </div>
+        
+
+         
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                <time class="article-words">
+                    1275字
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="前言">前言</h2>
+<p>为了更好地装修博客，也为了复健自己的表达和写作能力，我决定开始学习网页前端设计教学。本教学理应包含三个部分：HTML、CSS和JavaScript……但是理想和现实总是有差距的，能不能实现、能学到何种程度就是另一码事了。<br/></p>
+<p>本期教材：<a class="link" href="https://www.bilibili.com/video/BV1x4411V75C"  target="_blank" rel="noopener"
+    >【狂神说Java】HTML5完整教学通俗易懂</a></p>
+<h2 id="网页结构">网页结构</h2>
+<p>一个网页主要是由以下部分组成的：</p>
+<ul>
+<li>header：网页头部</li>
+<li>footer：网页尾部</li>
+<li>section：网页中的独立区域</li>
+<li>article：文章内容</li>
+<li>aside：侧边栏</li>
+<li>nav：导航栏</li>
+</ul>
+<h2 id="基本标签">基本标签</h2>
+<h3 id="网页信息标签">网页信息标签</h3>
+<ul>
+<li>注释标签<code>&lt;!--  --&gt;</code></li>
+<li>网页头部标签<code>&lt;head&gt;&lt;/head&gt;</code></li>
+<li>网页主体标签<code>&lt;body&gt;&lt;/body&gt;</code>页面的内容都写在这个标签里</li>
+<li>网页标题标签<code>&lt;title&gt;&lt;/title&gt;</code></li>
+<li>描述性标签<code>&lt;meta&gt;&lt;/meta&gt;</code>用来描述网页的编码类型、关键字、网络介绍
+<ul>
+<li><code>&lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;</code></li>
+<li><code>&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="功能性标签">功能性标签</h3>
+<h4 id="文字">文字</h4>
+<ul>
+<li>段落标签<code>&lt;p&gt;&lt;/p&gt;</code>属于不同段落</li>
+<li>换行标签<code>&lt;br/&gt;</code>属于同一个段落，不应用段前段后间距</li>
+<li>一级标题<code>&lt;h1&gt;&lt;/h1&gt;</code>
+<ul>
+<li>二级标题<code>&lt;h2&gt;&lt;/h2&gt;</code></li>
+</ul>
+</li>
+<li>水平线标签<code>&lt;hr/&gt;</code></li>
+</ul>
+<h4 id="媒体">媒体</h4>
+<ul>
+<li>图像标签<code>&lt;img src=&quot;图片路径&quot; alt=&quot;图像替代文字&quot; title=&quot;鼠标悬停文字&quot; width=&quot;宽度&quot; height=&quot;高度&quot; /&gt;</code>
+<ul>
+<li>相对路径：<code>../</code>本文件所在的上一级文件夹</li>
+</ul>
+</li>
+<li>音频标签<code>&lt;video src=&quot;音频路径&quot; controls autoplay&gt;&lt;/video&gt;</code></li>
+<li>视频标签<code>&lt;video src=&quot;视频路径&quot; controls autoplay&gt;&lt;/video&gt;</code>
+<ul>
+<li>controls：控制条</li>
+<li>autoplay：自动播放</li>
+</ul>
+</li>
+<li>链接标签<code>&lt;a href=&quot;跳转位置&quot; target=&quot;窗口打开类型&quot;文本&lt;/a&gt;</code>
+<ul>
+<li><code>target=&quot;_self&quot;</code>本窗口</li>
+<li><code>target=&quot;_blank&quot;</code>新窗口</li>
+</ul>
+</li>
+<li><strong>锚链接</strong>
+<ol>
+<li>定义锚<code>&lt;a name=&quot;top&quot;&gt;我是锚&lt;/a&gt;</code></li>
+<li>插入链接<code>&lt;a href=&quot;#top&quot;&gt;回到锚&lt;/a&gt;</code></li>
+</ol>
+</li>
+</ul>
+<h2 id="进阶标签">进阶标签</h2>
+<h3 id="列表标签">列表标签</h3>
+<p>待填坑</p>
+<h3 id="表格标签">表格标签</h3>
+<p>以一个3x2的表格为例：</p>
+<pre><code>&lt;table border=&quot;1px&quot;&gt;
+  &lt;tr&gt;//行标签
+	&lt;td colspan=&quot;2&quot;&gt;1-1&lt;/td&gt; //横列合并左右单元格
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+	&lt;td rowspan=&quot;2&quot;&gt;2-1&lt;/td&gt; //纵列合并上下单元格
+	&lt;td&gt;2-2&lt;/td&gt;
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+	&lt;td&gt;3-1&lt;/td&gt;
+  &lt;/tr&gt; 
+&lt;/table&gt;
+</code></pre>
+<p>效果：
+<table border="1px">
+<tr>
+<td colspan="2">1</td> 
+</tr> 
+<tr>
+<td rowspan="2">2-1</td>
+<td>2-2</td>
+</tr> 
+<tr>
+<td>3-1</td>
+</tr> 
+</table></p>
+<h3 id="iframe标签">iframe标签</h3>
+<p>iframe是指在一个网页中嵌套另一个网页的功能。使用例：插入B站视频、插入子页面。<br/>
+<code>&lt;iframe src=&quot;页面路径&quot; name=框架标识名 frameborder=&quot;0&quot; width=&quot;宽度px&quot; height=&quot;高度px&quot;&gt; &lt;/iframe&gt;</code></p>
+<h2 id="块元素和行元素的概念">块元素和行元素的概念</h2>
+<ul>
+<li>块元素：独占一<strong>段</strong>的元素，如：<code>&lt;p&gt;</code> <code>&lt;h1&gt;</code></li>
+<li>行元素：可以摆放在一段的元素，如：斜体标签、粗体标签</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%BD%91%E9%A1%B5%E5%89%8D%E7%AB%AF/">网页前端</a>
+        
+            <a href="/tags/html/">HTML</a>
+        
+            <a href="/tags/css/">CSS</a>
+        
+    </section>
+
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最終更新 Nov 12, 2021 16:41 CST
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+      
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 幽霊船
+    </section>
+    
+    <section class="powerby">
+        
+            少しでも前に進みたい <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+    
+    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目次</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#网页结构">网页结构</a></li>
+    <li><a href="#基本标签">基本标签</a>
+      <ol>
+        <li><a href="#网页信息标签">网页信息标签</a></li>
+        <li><a href="#功能性标签">功能性标签</a>
+          <ol>
+            <li><a href="#文字">文字</a></li>
+            <li><a href="#媒体">媒体</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#进阶标签">进阶标签</a>
+      <ol>
+        <li><a href="#列表标签">列表标签</a></li>
+        <li><a href="#表格标签">表格标签</a></li>
+        <li><a href="#iframe标签">iframe标签</a></li>
+      </ol>
+    </li>
+    <li><a href="#块元素和行元素的概念">块元素和行元素的概念</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+        
+            <form action="/search/" class="search-form widget" >
+        <p>
+            <label>検索</label>
+            <input name="keyword" required placeholder="入力..." />
+        
+            <button title="検索">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+        
+            <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">アーカイブ</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2021">
+                        
+                            <span class="year">2021</span>
+                            <span class="count">3</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+        
+            <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">タグ</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/%E5%89%91%E6%8C%81%E5%88%80%E4%B9%9F/" class="font_size_2">
+                剑持刀也
+            </a>
+        
+            <a href="/tags/%E5%BD%A9%E8%99%B9%E7%A4%BE/" class="font_size_2">
+                彩虹社
+            </a>
+        
+            <a href="/tags/css/" class="font_size_1">
+                CSS
+            </a>
+        
+            <a href="/tags/html/" class="font_size_1">
+                HTML
+            </a>
+        
+            <a href="/tags/%E5%AE%97%E6%95%99/" class="font_size_1">
+                宗教
+            </a>
+        
+            <a href="/tags/%E7%BD%91%E9%A1%B5%E5%89%8D%E7%AB%AF/" class="font_size_1">
+                网页前端
+            </a>
+        
+    </div>
+</section>
+        
+    </aside>
+
+
+        </div>
+        <script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+
+</script>
+
+
+    </body>
+</html>
