@@ -8,16 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>個人情報</title>
-      <link>https://example.com/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1/</link>
+      <title>About me</title>
+      <link>https://example.com/about-me/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1/</guid>
-      <description>代填坑……</description>
+      <guid>https://example.com/about-me/</guid>
+      <description>待填坑……</description>
     </item>
     
     <item>
-      <title>アーカイブ</title>
+      <title>Archives</title>
       <link>https://example.com/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>サーチ</title>
+      <title>Search</title>
       <link>https://example.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

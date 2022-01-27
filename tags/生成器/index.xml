@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生成器 on 幽霊船</title>
+    <link>https://example.com/tags/%E7%94%9F%E6%88%90%E5%99%A8/</link>
+    <description>Recent content in 生成器 on 幽霊船</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E7%94%9F%E6%88%90%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>乱七八糟生成器</title>
+      <link>https://example.com/p/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>〔1〕emoji组合生成器 http://t.cn/A6xi5Nft 〔2〕中二称号生成器 〔3〕缩写释义生成器 O网页链接 〔4〕TB评论生成器 O网页链接 〔5〕废话学小编生成器 O网页链接</description>
+    </item>
+    
+  </channel>
+</rss>

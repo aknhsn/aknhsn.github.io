@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weekly on 幽霊船</title>
+    <link>https://example.com/tags/weekly/</link>
+    <description>Recent content in Weekly on 幽霊船</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 | Weekly-46 | Nov.11-Nov.21 | 脱单第一周</title>
+      <link>https://example.com/p/2021weekly-46/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/2021weekly-46/</guid>
+      <description>原来，脱单真的会让人失去理智——神奇的是，这次我似乎闻到了宿命的味道，终于找到了自己理想中的恋爱。听上去有点不可思议。去年这个时候我把小王同</description>
+    </item>
+    
+  </channel>
+</rss>
